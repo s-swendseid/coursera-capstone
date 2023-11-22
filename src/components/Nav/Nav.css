@@ -1,0 +1,162 @@
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 10rem;
+  margin-right: 2rem;
+}
+
+.mobile-img {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially hide the sidebar off-screen */
+  width: 80%; /* Adjust the width as needed */
+  height: 100vh;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: right 1s ease;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  position: static;
+}
+
+.close-button {
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.nav-icon {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  display: none;
+  transition: color 0.3s ease;
+  margin-left: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  /* Apply styles for smaller screens */
+  nav ul {
+    display: none; /* Hide the navigation links by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav.active ul {
+    display: flex; /* Show the navigation links when active */
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    margin-right: 0;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .nav-icon {
+    display: block; /* Show on smaller screens */
+  }
+
+  .active .sidebar {
+    width: 20rem;
+  }
+
+  .sidebar {
+    display: flex;
+  }
+
+  .sidebar.active {
+    right: 0; /* Slide the sidebar in when active */
+  }
+}

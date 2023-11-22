@@ -1,13 +1,17 @@
 import React from "react";
-import Logo from "../assets/Logo.svg";
+import "../../App.css";
+import "./Footer.css";
+import Logo from "../../assets/Logo.svg";
 
 function Footer() {
   return (
-    <div>
-      <img src={Logo} alt="company-logo" />
+    <footer>
+      <div className="img-column">
+        <img src={Logo} alt="company-logo" className="logo" />
+      </div>
 
-      <div>
-        <h2>Shop</h2>
+      <div className="footer-column shop-column">
+        <h4>Shop</h4>
         <ul>
           <li>
             <a href="#">Home</a>
@@ -30,15 +34,15 @@ function Footer() {
         </ul>
       </div>
 
-      <div>
-        <h2>Contact</h2>
+      <div className="footer-column contact-column">
+        <h4>Contact</h4>
         <p>123 St. Chicago, IL 12345</p>
         <p>(898) 789-4562</p>
         <p>info@littlelemon.com</p>
       </div>
 
-      <div>
-        <h2>Social Media</h2>
+      <div className="footer-column social-media-column">
+        <h4>Social Media</h4>
         <ul>
           <li>
             <a href="#">Instagram</a>
@@ -54,7 +58,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 }
 

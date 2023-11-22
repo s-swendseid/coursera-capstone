@@ -1,0 +1,10 @@
+.booking {
+  width: 100%;
+  max-width: 100%; /* Adjust the maximum width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1.25rem;
+}

@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+/* Define color variables */
+:root {
+  --primary-color: #f4ce14;
+  --secondary-color: #495e57;
+  --accent-color: #ee9972;
+  --background-color: #edefee;
+  --highlight-color: #fbdabb;
+  --text-color: #333333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  justify-content: center; /* Center items vertically */
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Other global styles like buttons, links, etc. here */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Markazi Text", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 64pt;
+  font-weight: 500; /* Display Title - Medium */
+}
+
+h2 {
+  font-size: 40pt;
+  font-weight: 400; /* Sub title - regular */
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-weight: 800; /* Section title - extra bold */
+}
+
+p {
+  font-size: 16pt;
+  max-width: 65ch;
+  line-height: 1.5;
 }
