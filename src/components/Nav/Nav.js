@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../App.css";
 import "./Nav.css";
-import Logo from "../../assets/Logo.svg";
+import Logo from "../../assets/images/Logo.svg";
 
 function Nav() {
   const [isActive, setIsActive] = useState(false);

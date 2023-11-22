@@ -4,25 +4,69 @@ header {
   width: 100%;
   max-width: 100%; /* Adjust the maximum width as needed */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
 }
 
-header section {
-  width:80%;
-  margin-left: 10%;
-  padding-bottom: 50px;
-  color: #EDEFEE;
-  
-  }
+section {
+  display: flex;
+  margin: -4rem auto 1rem auto;
+}
+
+header .hero-text {
+  flex: 1;
+  padding: 2rem;
+  width: 80%;
+  color: #edefee;
+}
 
 header h2 {
   color: var(--primary-color);
+  margin-bottom: 0;
 }
 
 header h3 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 200;
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 0.5rem;
+}
+
+header p {
+  line-height: 1.6;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2.5rem;
+  color: #495e57;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  outline: none;
+  padding: 1rem 2.2rem;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  transform: translateY(-5px);
+}
+
+.hero-img {
+  margin: 6rem 0 -8rem 5rem;
+}
+
+.hero-img img {
+  width: 20rem;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 2rem;
 }
